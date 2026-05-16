@@ -1,8 +1,8 @@
--- สร้างฐานข้อมูล
-CREATE DATABASE IF NOT EXISTS clinic_system;
-USE clinic_system;
+-- เปลี่ยนจาก clinic_system เป็น app_db ให้ตรงกับ docker-compose และ PHP
+CREATE DATABASE IF NOT EXISTS app_db;
+USE app_db;
 
--- สร้างตาราง users (ตรวจสอบชื่อคอลัมน์ให้ตรงกับโค้ด PHP)
+-- สร้างตาราง users เหมือนเดิม
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     fullname VARCHAR(255) NOT NULL,
