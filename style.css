@@ -62,8 +62,7 @@ label {
     font-weight: bold;
 }
 
-input[type="text"],
-input[type="email"] {
+.form-control {
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -72,7 +71,9 @@ input[type="email"] {
     transition: border-color 0.3s;
 }
 
-input:focus {
+input:focus,
+select:focus,
+.form-control:focus {
     outline: none;
     border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.2);
@@ -92,6 +93,14 @@ button {
 
 button:hover {
     background-color: #1557b0;
+}
+
+.form-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
 }
 
 .btn-cancel {
@@ -123,6 +132,11 @@ th {
 td {
     padding: 12px 15px;
     border-bottom: 1px solid #eee;
+}
+
+th.center,
+td.center {
+    text-align: center;
 }
 
 tr:hover {
